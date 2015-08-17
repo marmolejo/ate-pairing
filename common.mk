@@ -40,7 +40,7 @@ AR=x86_64-w64-mingw32-ar r
 endif
 
 ifeq ($(DBG),on)
-CFLAGS += -O0 -g3 -UNDEBUG
+CFLAGS = -O0 -ggdb3 -UNDEBUG
 LDFLAGS += -g3
 endif
 
